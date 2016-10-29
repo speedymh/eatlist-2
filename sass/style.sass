@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+$highlight: #e71425
+$fc2: #aaa
+
+body
+	margin: 0
+	font-family: "Open Sans", sans-serif
+	background: url(/images/carrots.jpg)
+		size: cover
+		position: center
+		filter: blur(50px)
+	display: flex
+	justify-content: center
+	align-items: center
+
+
+a 
+	text-decoration: none
+	color: $fc2
+
+.card
+	box-shadow: 0px 0px 61px 0px rgba(0,0,0,.5);
+	border-radius: 5px
+	background: white
+
+	position: absolute
+	display: flex
+	flex-direction: column
+	align-items: center
+
+	max-height: 600px
+	max-width: 600px
+
+	img
+		margin: 40px 40px 0px
+		width: 60vw
+
+	p
+		margin: 40px auto 30px
+		text-align: center
+		font-size: 1em
+
+	.cta
+		display: flex
+		align-items: center
+		justify-content: center
+		margin: 0 0 40px
+
+		.login
+			border: 1px solid $fc2
+				radius: 3px
+			padding: 7px 12px
+			font-size: 15px
+
+		button
+			margin-left: 6px
+			background: $highlight
+			border: none
+				radius: 3px
+			color: white
+			font: 
+				family: "Open Sans"
+				weight: 400
+				size: 15px
+			letter-spacing: .3
+			padding: 8px 12px
+ 
+			&:hover
+				background: darken($highlight, 2%)
+				cursor: pointer
