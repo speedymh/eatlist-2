@@ -24,48 +24,63 @@ a
 	border-radius: 5px
 	background: white
 
-	position: absolute
-	display: flex
-	flex-direction: column
-	align-items: center
 
 	max-height: 600px
 	max-width: 600px
 
-	img
-		margin: 40px 40px 0px
-		width: 60vw
-
-	p
-		margin: 40px auto 30px
-		text-align: center
-		font-size: 1em
-
-	.cta
+	.wrapper
+		width: 300%
+		height: 100%
+		margin-left: -100%
 		display: flex
-		align-items: center
-		justify-content: center
-		margin: 0 0 40px
-
+	
 		.login
-			border: 1px solid $fc2
-				radius: 3px
-			padding: 7px 12px
-			font-size: 15px
+			color: blue
+			width: 100%
+	
+		.welcome
+			display: flex
+			flex-direction: column
+			align-items: center
+			width: 100%
+	
+			img
+				margin: 40px 40px 0px
+				width: 60vw
 
-		button
-			margin-left: 6px
-			background: $highlight
-			border: none
-				radius: 3px
-			color: white
-			font: 
-				family: "Open Sans"
-				weight: 400
-				size: 15px
-			letter-spacing: .3
-			padding: 8px 12px
- 
-			&:hover
-				background: darken($highlight, 2%)
-				cursor: pointer
+			p
+				margin: 40px auto 30px
+				text-align: center
+				font-size: 1em
+
+			.cta
+				display: flex
+				align-items: center
+				justify-content: center
+				margin: 0 0 40px
+
+				.login
+					border: 1px solid $fc2
+						radius: 3px
+					padding: 7px 12px
+					font-size: 15px
+
+				button
+					margin-left: 6px
+					background: $highlight
+					border: none
+						radius: 3px
+					color: white
+					font: 
+						family: "Open Sans"
+						weight: 400
+						size: 15px
+					letter-spacing: .3
+					padding: 8px 12px
+
+					&:hover
+						background: darken($highlight, 2%)
+						cursor: pointer
+		
+		.register
+			width: 100%
