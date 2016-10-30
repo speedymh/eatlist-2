@@ -14,7 +14,7 @@ body {
 /* line 18, C:/wampstack/apache2/htdocs/eatlist-2/sass/style.sass */
 a {
   text-decoration: none;
-  color: #aaa; }
+  color: #909090; }
 
 /* line 22, C:/wampstack/apache2/htdocs/eatlist-2/sass/style.sass */
 .card {
@@ -56,11 +56,12 @@ a {
         margin: 0 0 40px; }
         /* line 62, C:/wampstack/apache2/htdocs/eatlist-2/sass/style.sass */
         .card .wrapper .welcome .cta .login {
-          border: 1px solid #aaa;
+          border: 1px solid #909090;
             border-radius: 3px;
           padding: 7px 12px;
-          font-size: 15px; }
-        /* line 68, C:/wampstack/apache2/htdocs/eatlist-2/sass/style.sass */
+          font-size: 15px;
+          color: #5d5d5d; }
+        /* line 69, C:/wampstack/apache2/htdocs/eatlist-2/sass/style.sass */
         .card .wrapper .welcome .cta button {
           margin-left: 6px;
           background: #e71425;
@@ -72,11 +73,11 @@ a {
           font-size: 15px;
           letter-spacing: .3;
           padding: 8px 12px; }
-          /* line 81, C:/wampstack/apache2/htdocs/eatlist-2/sass/style.sass */
+          /* line 82, C:/wampstack/apache2/htdocs/eatlist-2/sass/style.sass */
           .card .wrapper .welcome .cta button:hover {
             background: #de1323;
             cursor: pointer; }
-    /* line 85, C:/wampstack/apache2/htdocs/eatlist-2/sass/style.sass */
+    /* line 86, C:/wampstack/apache2/htdocs/eatlist-2/sass/style.sass */
     .card .wrapper .register {
       width: 100%; }
 
