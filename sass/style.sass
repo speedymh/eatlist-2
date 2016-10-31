@@ -5,50 +5,49 @@ $fc2: #5d5d5d
 $trans: all .3s ease-in-out
 
 body
-  margin: 0
-	font-family: "Open Sans", sans-serif
-  display: flex
-  align-items: center
-  justify-content: center
-  min-height: 100vh
-	background: url(images/carrots.jpg)
+	margin: 0
+	font-family: 'Open Sans', sans-serif
+	display: flex
+	align-items: center
+	justify-content: center
+	background: url(../images/carrots.jpg)
 		size: cover
 		position: center
-  
-  .card
-    width: 90vw
-    max-width: 600px
-    height: 90vh
-    max-height: 700px
-    display: flex
-    align-items: center
-    justify-content: center
-    background: blue
-    color: white
-    border-radius: 2px
-    letter-spacing: 1px
-    overflow: hidden
-    
-    .wrapper
-      background: red
-      height: calc(100% - 2px)
-      width: auto
-      display: flex
-      transition: all .3s ease-in-out
-      margin-left: 0px
-      
-      &.slideleft
-        margin-left: 200%
-        
-      &.slideright
-        margin-left: -200%
-      
-      .login
-        background: lightgreen
-        color: black
-        
-      .welcome
-        background: darkgreen
-        
-      .register
-        background: green
+ 
+	.card
+		width: 90vw
+		max-width: 600px
+		height: 90vh
+		max-height: 700px
+		display: flex
+		align-items: center
+		justify-content: center
+		background: blue
+		color: white
+		border-radius: 2px
+		letter-spacing: 1px
+		overflow: hidden
+
+		.wrapper
+			background: red
+			height: calc(100% - 2px)
+			width: auto
+			display: flex
+			transition: all .3s ease-in-out
+			margin-left: 0px
+
+			&.slideleft
+				margin-left: 200%
+
+			&.slideright
+				margin-left: -200%
+
+			.login-site
+				background: lightgreen
+				color: black
+
+			.welcome-site
+				background: darkgreen
+
+			.register-site
+				background: green

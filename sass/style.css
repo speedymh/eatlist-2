@@ -1,11 +1,15 @@
-/* line 1, C:/wampstack/apache2/htdocs/eatlist-2/sass/style.sass */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+/* line 7, C:/wampstack/apache2/htdocs/eatlist-2/sass/style.sass */
 body {
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh; }
-  /* line 8, C:/wampstack/apache2/htdocs/eatlist-2/sass/style.sass */
+  background: url(../images/carrots.jpg);
+    background-size: cover;
+    background-position: center; }
+  /* line 17, C:/wampstack/apache2/htdocs/eatlist-2/sass/style.sass */
   body .card {
     width: 90vw;
     max-width: 600px;
@@ -19,7 +23,7 @@ body {
     border-radius: 2px;
     letter-spacing: 1px;
     overflow: hidden; }
-    /* line 22, C:/wampstack/apache2/htdocs/eatlist-2/sass/style.sass */
+    /* line 31, C:/wampstack/apache2/htdocs/eatlist-2/sass/style.sass */
     body .card .wrapper {
       background: red;
       height: calc(100% - 2px);
@@ -27,21 +31,21 @@ body {
       display: flex;
       transition: all 0.3s ease-in-out;
       margin-left: 0px; }
-      /* line 30, C:/wampstack/apache2/htdocs/eatlist-2/sass/style.sass */
+      /* line 39, C:/wampstack/apache2/htdocs/eatlist-2/sass/style.sass */
       body .card .wrapper.slideleft {
         margin-left: 200%; }
-      /* line 33, C:/wampstack/apache2/htdocs/eatlist-2/sass/style.sass */
+      /* line 42, C:/wampstack/apache2/htdocs/eatlist-2/sass/style.sass */
       body .card .wrapper.slideright {
         margin-left: -200%; }
-      /* line 36, C:/wampstack/apache2/htdocs/eatlist-2/sass/style.sass */
-      body .card .wrapper .login {
+      /* line 45, C:/wampstack/apache2/htdocs/eatlist-2/sass/style.sass */
+      body .card .wrapper .login-site {
         background: lightgreen;
         color: black; }
-      /* line 40, C:/wampstack/apache2/htdocs/eatlist-2/sass/style.sass */
-      body .card .wrapper .welcome {
+      /* line 49, C:/wampstack/apache2/htdocs/eatlist-2/sass/style.sass */
+      body .card .wrapper .welcome-site {
         background: darkgreen; }
-      /* line 43, C:/wampstack/apache2/htdocs/eatlist-2/sass/style.sass */
-      body .card .wrapper .register {
+      /* line 52, C:/wampstack/apache2/htdocs/eatlist-2/sass/style.sass */
+      body .card .wrapper .register-site {
         background: green; }
 
 /*# sourceMappingURL=style.css.map */

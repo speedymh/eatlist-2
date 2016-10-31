@@ -1,11 +1,11 @@
-$(function(){
+$(function () {
   $cardwidth = $('.card').width();
 
-  console.log($cardwidth)
+  console.log($cardwidth);
 
-  $('.login').css('width' , $cardwidth);
-  $('.welcome').css('width' , $cardwidth);
-  $('.register').css('width' , $cardwidth);
+  $('.login-site').css('width' , $cardwidth);
+  $('.welcome-site').css('width' , $cardwidth);
+  $('.register-site').css('width' , $cardwidth);
   
   $('.left').on('click', function(){
     $('.wrapper').removeClass('slideright');
