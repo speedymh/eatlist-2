@@ -1,12 +1,25 @@
 $(function(){
-	$cardHeight = $('.card').height();
-	$logoWidth = $('.logo').width();
-	
-	$wrapperHeight = $cardHeight*2
-	$cardWidth = $logoWidth+80
-	
-	console.log($cardHeight, $logoWidth);
-	
-	$('.wrapper').css('height', $cardHeight);
-	$('.card').css('width', $cardWidth);
+  $cardwidth = $('.card').width();
+
+  console.log($cardwidth)
+
+  $('.login').css('width' , $cardwidth);
+  $('.welcome').css('width' , $cardwidth);
+  $('.register').css('width' , $cardwidth);
+  
+  $('.left').on('click', function(){
+    $('.wrapper').removeClass('slideright');
+    $('.wrapper').addClass('slideleft');
+  });
+  
+  $('.center').on('click', function(){
+    $('.wrapper').removeClass('slideleft');
+    $('.wrapper').removeClass('slideright');
+  });
+  
+  $('.right').on('click', function(){
+    $('.wrapper').removeClass('slideleft');
+    $('.wrapper').addClass('slideright');
+  });
+  
 });

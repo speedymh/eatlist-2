@@ -1,93 +1,44 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-
-$highlight: #e71425
-$fc2: #5d5d5d
-$trans: all .3s ease-in-out
-
 body
-	margin: 0
-	font-family: "Open Sans", sans-serif
-	background: url(../images/carrots.jpg)
-		size: cover
-		position: center
-		filter: blur(50px)
-	display: flex
-	justify-content: center
-	align-items: center
-	overflow: hidden
-	
-
-
-	a 
-		text-decoration: none
-		color: $fc2
-
-	.card
-		box-shadow: 0px 0px 61px 0px rgba(0,0,0,.5);
-		border-radius: 5px
-		background: white
-
-		max-height: 600px
-		max-width: 600px
-		margin: auto 30px
-
-		.wrapper
-			width: 300%
-			margin-left: -100%
-			display: flex
-			overflow: hidden
-
-			.login
-				color: blue
-				width: 100%
-
-			.welcome
-				display: flex
-				flex-direction: column
-				align-items: center
-				width: 100%
-
-				.logo
-					margin: 40px 40px 0px
-					width: 60vw
-					max-height: 350px
-
-				p
-					margin: 40px auto 30px
-					text-align: center
-					font-size: 1em
-
-				.cta
-					display: flex
-					align-items: center
-					justify-content: center
-					margin: 0 0 40px
-
-					.login
-						border: 1px solid lighten($fc2, 20%)
-							radius: 3px
-						padding: 7px 12px
-						font-size: 15px
-						color: $fc2
-						transition: $trans
-
-					button
-						margin-left: 6px
-						background: $highlight
-						border: none
-							radius: 3px
-						color: white
-						font: 
-							family: "Open Sans"
-							weight: 400
-							size: 15px
-						letter-spacing: .3
-						padding: 8px 12px
-						transition: $trans
-
-						&:hover
-							background: darken($highlight, 2%)
-							cursor: pointer
-
-			.register
-				width: 100%
+  margin: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  min-height: 100vh
+  
+  .card
+    width: 90vw
+    max-width: 600px
+    height: 90vh
+    max-height: 700px
+    display: flex
+    align-items: center
+    justify-content: center
+    background: blue
+    color: white
+    border-radius: 2px
+    letter-spacing: 1px
+    overflow: hidden
+    
+    .wrapper
+      background: red
+      height: calc(100% - 2px)
+      width: auto
+      display: flex
+      transition: all .3s ease-in-out
+      margin-left: 0px
+      
+      &.slideleft
+        margin-left: 200%
+        
+      &.slideright
+        margin-left: -200%
+      
+      .login
+        background: lightgreen
+        color: black
+        
+      .welcome
+        background: darkgreen
+        
+      .register
+        background: green
