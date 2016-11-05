@@ -1,8 +1,10 @@
 $(function () {
   $cardwidth = $('.card').width();
+	$cardheight = $('.card').height();
 
-  console.log($cardwidth);
-
+  console.log($cardwidth, $cardheight);
+	
+	$('.wrapper').css('height', $cardheight);
   $('.login-site').css('width' , $cardwidth);
   $('.welcome-site').css('width' , $cardwidth);
   $('.register-site').css('width' , $cardwidth);
