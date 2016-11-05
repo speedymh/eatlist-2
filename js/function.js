@@ -1,12 +1,27 @@
-$(function(){
-	$cardHeight = $('.card').height();
-	$logoWidth = $('.logo').width();
+$(function () {
+  $cardwidth = $('.card').width();
+	$cardheight = $('.card').height();
+
+  console.log($cardwidth, $cardheight);
 	
-	$wrapperHeight = $cardHeight*2
-	$cardWidth = $logoWidth+80
-	
-	console.log($cardHeight, $logoWidth);
-	
-	$('.wrapper').css('height', $cardHeight);
-	$('.card').css('width', $cardWidth);
+	$('.wrapper').css('height', $cardheight);
+  $('.login-site').css('width' , $cardwidth);
+  $('.welcome-site').css('width' , $cardwidth);
+  $('.register-site').css('width' , $cardwidth);
+  
+  $('.left').on('click', function(){
+    $('.wrapper').removeClass('slideright');
+    $('.wrapper').addClass('slideleft');
+  });
+  
+  $('.center').on('click', function(){
+    $('.wrapper').removeClass('slideleft');
+    $('.wrapper').removeClass('slideright');
+  });
+  
+  $('.right').on('click', function(){
+    $('.wrapper').removeClass('slideleft');
+    $('.wrapper').addClass('slideright');
+  });
+  
 });
